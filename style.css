@@ -1,0 +1,61 @@
+.duckpic {
+  width: 200px;
+  height: 200px;
+  /* margin: 5px; */
+  object-fit: fill;
+}
+
+#duckContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  /* grid-template-rows: auto auto auto auto; */
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 10px;
+}
+
+.h1 {
+  text-align: center;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: none; */
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10%;
+  width: 50%;
+}
+
+.close {
+  color: black;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.innerModal {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
